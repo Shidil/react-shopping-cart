@@ -6,27 +6,32 @@ const data = {
 		{
 			id: 1,
 			name: "Blue Shirt",
-			category: 1
+			category: 1,
+			price: 80
 		},
 		{
 			id: 2,
 			name: "Green Shirt",
-			category: 1
+			category: 1,
+			price: 80
 		},
 		{
 			id: 3,
 			name: "Blue Jeans",
-			category: 3
+			category: 3,
+			price: 80
 		},
 		{
 			id: 4,
 			name: "Black Jeans",
-			category: 3
+			category: 3,
+			price: 80
 		},
 		{
 			id: 5,
 			name: "Brown Leather Jacket",
-			category: 2
+			category: 2,
+			price: 80
 		}
 	],
 	category: [
@@ -48,6 +53,11 @@ const data = {
 }
 
 const requestHandler = (request, response) => {
+	// Set CORS headers
+	response.setHeader('Access-Control-Allow-Origin', '*');
+	response.setHeader('Access-Control-Request-Method', '*');
+	response.setHeader('Access-Control-Allow-Methods', 'OPTIONS, GET');
+	response.setHeader('Access-Control-Allow-Headers', '*');
   response.writeHead(200, {
     "Content-Type": "application/json"
   });
