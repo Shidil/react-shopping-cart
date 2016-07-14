@@ -12,7 +12,7 @@ export default class BaseWebSrv {
    * @param {function} callback
    * @return {undefined}
    */
-  getJSON(url, callBack) {
+  static getJSON(url, callBack) {
 		fetch(url)
 		  .then(res => res.json())
 		  .then(json => {
@@ -20,7 +20,7 @@ export default class BaseWebSrv {
 			});
   }
 
-  postJSON(url, params, callBack) {
+  static postJSON(url, params, callBack) {
   	// TODO
   }
 }

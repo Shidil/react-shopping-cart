@@ -4,7 +4,7 @@ import style from './ProductGrid.css';
 
 import ProductItem from './product/ProductItem';
 import ProductFilterItem from './filter/ProductFilter';
-import BaseWebSrv from '../BaseWebSrv';
+import BaseWebSrv from '../utils/BaseWebSrv';
 
 export default class ProductGrid extends React.Component {
 	// default state
@@ -17,12 +17,11 @@ export default class ProductGrid extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = this._getInitialState();
-		this.webSrv = new BaseWebSrv();
 
 	  let success = (res) => {
 	  	this.setState( {data: res} );
   	};
-	  this.webSrv.getJSON(props.source, success);
+	  BaseWebSrv.getJSON(props.source, success);
 	}
 
 	render() {
@@ -37,7 +36,7 @@ export default class ProductGrid extends React.Component {
 				categories 	 = this.state.data.category;
 
 		let productItems = productList.map( product => {
-			return (<ProductItem key={product.id} data={product} />);
+			return (<ProductItem key={product.id} product={product} />);
 		});
 		let filterItems = categories.map( cat => {
 			return (<ProductFilterItem key={cat.id} data={cat} />);
@@ -47,6 +46,7 @@ export default class ProductGrid extends React.Component {
 			<div>
 				<div className="view">
 					<section className="grid">
+		      	<div className="grid__sizer"></div>
 		      	{productItems}
 		      </section>
 	      </div>

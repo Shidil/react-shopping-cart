@@ -7,31 +7,41 @@ const data = {
 			id: 1,
 			name: "Blue Shirt",
 			category: 1,
-			price: 80
+			price: 80,
+			brand: "Woodland",
+			images: ['http://tympanus.net/Blueprints/FilterableProductGrid/images/product1/2.png']
 		},
 		{
 			id: 2,
 			name: "Green Shirt",
 			category: 1,
-			price: 80
+			price: 80,
+			brand: "Woodland",
+			images: ['http://tympanus.net/Blueprints/FilterableProductGrid/images/product1/3.png']
 		},
 		{
 			id: 3,
 			name: "Blue Jeans",
 			category: 3,
-			price: 80
+			price: 80,
+			brand: "Woodland",
+			images: ['http://tympanus.net/Blueprints/FilterableProductGrid/images/product6/3.png']
 		},
 		{
 			id: 4,
 			name: "Black Jeans",
 			category: 3,
-			price: 80
+			price: 80,
+			brand: "Woodland",
+			images: ['http://tympanus.net/Blueprints/FilterableProductGrid/images/product6/3.png']
 		},
 		{
 			id: 5,
 			name: "Brown Leather Jacket",
 			category: 2,
-			price: 80
+			price: 80,
+			brand: "Woodland",
+			images: ['http://tympanus.net/Blueprints/FilterableProductGrid/images/product4/1.png']
 		}
 	],
 	category: [

@@ -35,7 +35,9 @@
     "node-fetch": "^1.5.3",
     "node-libs-browser": "1.0.0",
     "react": "15.2.1",
-    "react-dom": "15.2.1"
+    "react-dom": "15.2.1",
+    "isotope-layout": "~2.2.2",
+    "react-pure-render": "~1.0.2"
   },
   "devDependencies": {
     "babel-core": "6.10.4",
