@@ -56,3 +56,37 @@ a:hover {
 	text-align: center;
 	font-size: 2.5em;
 }
+
+
+/* Action style */
+
+.action {
+	font-family: Avenir, 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;
+	font-size: 1.05em;
+	position: relative;
+	overflow: hidden;
+	margin: 0;
+	padding: .25em;
+	cursor: pointer;
+	color: #fff;
+	border: none;
+	background: none;
+}
+
+.action:focus {
+	outline: none;
+}
+
+.action--button {
+	color: #5c5edc;
+}
+
+.no-touch .action--button:hover {
+	color: #fff;
+	outline: none;
+}
+
+.text-hidden {
+	position: absolute;
+	top: 200%;
+}

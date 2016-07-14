@@ -1,0 +1,29 @@
+
+/* Filter */
+
+.filter__label {
+	font-size: .85em;
+	display: inline-block;
+	margin: 0 2%;
+	font-weight: bold;
+	color: #393A3F;
+}
+
+.filter__item {
+	font-weight: bold;
+	margin: 0 2%;
+	padding: .1em;
+	vertical-align: middle;
+	color: #a3a3b3;
+	border-bottom: 2px solid transparent;
+}
+
+.filter__item--selected {
+	color: #5c5edc;
+	border-color: #5c5edc;
+}
+
+.filter__item .icon {
+	font-size: 1.75em;
+	display: none;
+}
